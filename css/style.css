@@ -488,15 +488,7 @@ margin: 0 3%;
   margin: 0 3.5%;
 }
 
-#music-bg-mobile {
-  display: block;
-  width: 100%;
-  height: auto;
-  background:  url('../images/forest.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+
 
 
 #album-art {
