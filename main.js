@@ -100,7 +100,7 @@ if ($(window).width() >= 700) {
 
 
       if(wScroll >= $(homeBg).offset().top) {
-        $(homeBg).css({'background-position':'center '+(wScroll * -0.5)+'px'});
+        $(homeBg).css({'background-position':'center '+(wScroll * -0.3)+'px'});
       };
 
 

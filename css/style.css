@@ -108,6 +108,7 @@ body {
   background-attachment: fixed;
   font-family: 'Merriweather', serif;
 
+
 }
 
 .flex-container {
@@ -299,7 +300,7 @@ nav {
   margin: 0 auto;
   margin-top: 10vh;
 	position:relative;
-  width:80%;
+  width:90%;
   max-width:1500px;
 	padding-bottom:56.25%;
 	padding-top:30px;
@@ -729,6 +730,7 @@ margin: 0 3%;
 
     align-items: center;
     overflow: scroll;
+    margin: 150px 0;
   }
 
   #about-text {
