@@ -374,6 +374,7 @@ footer {
   height: auto;
   padding: 15px 5%;
   background-color: black;
+  z-index: 20;
 }
 
 #menu-open {
