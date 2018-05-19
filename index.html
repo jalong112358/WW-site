@@ -10,8 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   </head>
   <body>
-   
- 
+    <div id="load-screen">
+      <button class="equalizer">
+       <span class="bar1"></span>
+       <span class="bar2"></span>
+       <span class="bar3"></span>
+     </button>
+   </div>
     <div id="home-bg">
     <header>
 
@@ -45,10 +50,10 @@
     </header>
 
 
-    <div id="contact-form" method="post" action="contact-form-handler.php">
+    <div id="contact-form">
       <img id="form-close" src="images/menu-close.svg"/>
       <h1>Contact Us</h1>
-      <form>
+      <form method="post" action="contact-form-handler.php">
         <label for="name">Your Name:</label>
           <input id="name" type="text" name="name" placeholder="Full name">
         <label for="email">Your E-mail:</label>
@@ -57,7 +62,7 @@
           <input id="subject" type="text" name="subject" placeholder="Subject">
         <label for="message">Message:</label>
           <textarea id="message" name="message"placeholder="Your message"></textarea>
-        <input id="submit-button" type="submit" name="submit" value="Send">
+        <input id="submit-button" type="submit" value="Send">
       </form>
     </div>
   </div>
@@ -66,7 +71,7 @@
       <div id="music-bg-mobile">
         <div id="wrapper1">
           <h1>Keep Close</h1>
-          <a href="music.html"><img id="album-art" src="images/album-art.png"></a>
+          <a href="music.html"><img id="album-art" src="images/album-art.jpg"></a>
           <h2>Available On:</h2>
           <div id="music-services" class="flex-container">
             <img src="images/spotify-black.svg">
