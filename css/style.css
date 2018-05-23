@@ -499,6 +499,23 @@ footer {
   transition: opacity 1.5s ease;
 }
 
+#merch-dropdown {
+  display: none;
+  background-color: #717275;
+  padding: 20px 0;
+
+}
+
+
+#merch-dropdown.open {
+  display: block;
+}
+#merch-dropdown a {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  color: #2E2C2D;
+}
+
 #icons {
   margin-top: 10vh;
   width: 100%;
