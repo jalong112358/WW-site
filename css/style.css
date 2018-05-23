@@ -146,6 +146,7 @@ nav {
   color: #DADBDC;
   font-size: 1.3rem;
   letter-spacing: 8px;
+
 }
 
 #contact-form {
@@ -159,7 +160,7 @@ nav {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width:90%;
+  width: 90%;
   background-color: rgba(0,0,0,0.90);
 
   letter-spacing: 6px;
@@ -295,9 +296,9 @@ nav {
   height: auto;
 }
 
-#music-services img {
-  display: inline-block;
-  height: 4vh;
+#music-services a {
+
+  width: 30px;
   margin: 10%;
 
 }
@@ -339,6 +340,33 @@ nav {
 	height:100%;
 }
 
+.horizontal-divider {
+  margin: 0 auto;
+  width: 10%;
+  height: 1px;
+  border: .5px solid #353535;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+#booking-info {
+  text-align: center;
+  letter-spacing: 3.5px;
+}
+
+#footer-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #album-description {
   display: block;
   width: 100%;
@@ -360,12 +388,8 @@ nav {
   font-size: 1rem;
 }
 
-footer {
-  display: block;
-  width: 100%;
-  height: auto;
-  background-color: #3B3B3B;
-}
+
+
 
 
 
@@ -537,12 +561,7 @@ margin: 0 3%;
   color: black;
 }
 
-.horizontal-divider {
-  margin: 0 auto;
-  width:10%;
-  height: 1px;
-  border: .5px solid #353535;
-}
+
 
 #about {
   width: 100%;
@@ -574,6 +593,29 @@ margin: 0 3%;
 #video-wrapper {
   width: 100%;
   margin-top: 0;
+}
+
+#booking-info {
+  margin: 40px 0;
+}
+#booking-info h1 {
+  font-size: 1rem;
+  line-height: 50px;
+
+}
+
+#booking-info h2 {
+  font-size: .75rem;
+  line-height: 20px;
+}
+
+#footer-icons {
+  margin: 20px 0;
+}
+#footer-icons a {
+  width: 6.5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 #music-content {
@@ -686,7 +728,9 @@ margin: 0 3%;
     transition: opacity 2s ease;
   }
 
-  #nav-list a {
+  #nav-list a
+
+   {
     display: inline-block;
     width: 80px;
     padding: 0 10px;
@@ -698,7 +742,7 @@ margin: 0 3%;
   }
 
   #nav-list a.slide {
-    margin: 0 4%;
+    margin: 0 40px;
     -webkit-transition: margin 1s ease-out;
     -o-transition: margin 1s ease-out;
     transition: margin 1s ease-out;
@@ -713,6 +757,27 @@ margin: 0 3%;
 
   #nav-list a:hover {
     color: lightgrey;
+  }
+
+  #merch-dropdown {
+    position: absolute;
+    display: none;
+    top: 81px;
+    left: 50%;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    transform: translateX(30px);
+    padding: 10px 0;
+
+  }
+
+  #merch-dropdown.open {
+    display: block;
+  }
+  #merch-dropdown a {
+    width: 200px;
+    line-height: 20px;
+    letter-spacing: 5px;
   }
 
   #contact-form {
@@ -796,6 +861,26 @@ margin: 0 3%;
     height: auto;
     font-size: 1rem;
     line-height: 50px;
+  }
+
+  #booking-info {
+    margin: 40px 0;
+  }
+  #booking-info h1 {
+    font-size: 1rem;
+    line-height: 50px;
+
+  }
+
+  #booking-info h2 {
+    font-size: .75rem;
+    line-height: 20px;
+  }
+
+  #footer-icons a {
+    width: 30px;
+    margin: 20px;
+
   }
 
   #music-bg {

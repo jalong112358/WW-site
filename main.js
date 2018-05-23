@@ -1,3 +1,4 @@
+const pageBody = document.querySelector('body');
 const loadScreen = document.getElementById('load-screen');
 const openMenuBtn = document.getElementById('menu-open');
 const closeMenuBtn = document.getElementById('menu-close');
@@ -6,10 +7,13 @@ const socialIcons = document.getElementById('icons');
 const listItems = document.querySelectorAll('nav li');
 const navItems = document.querySelectorAll('nav a');
 const lrgLogo = document.getElementById('logo-lrg');
+const merchTab = document.getElementById('merch-tab');
+const subMerch = document.getElementById('merch-dropdown');
 const form = document.getElementById('contact-form');
 const contactButton = document.getElementById('contact-link');
 const formClose = document.getElementById('form-close');
 const homeBg = document.getElementById('home-bg');
+
 var w = window.innerWidth;
 
 let i = 0;
@@ -45,7 +49,7 @@ openMenuBtn.onclick = function () {
 
 };
 
-closeMenuBtn.onclick = function () {
+closeMenuBtn.onclick = function() {
   for(let i = 0; i < listItems.length; i++) {
     $(listItems[i]).removeClass('open');
 }
@@ -55,6 +59,29 @@ $(closeMenuBtn).addClass('animated', 'fadeOut');
  $(icons).removeClass('open');
 
 };
+
+$(merchTab).click(function(event){
+        event.stopPropagation();
+        $(subMerch).toggleClass('open')
+    });
+
+    $(document).click(function(){
+        $(subMerch).removeClass('open');
+    });
+
+// pageBody.onclick = function() {
+//   if ($(subMerch).hasClass('open')) {
+//     // $(subMerch).removeClass('open');
+//  }
+// };
+//
+// merchTab.onclick = function() {
+//   $(subMerch).toggleClass('open')
+// };
+
+
+
+
 
 
 
